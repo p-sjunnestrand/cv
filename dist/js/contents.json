@@ -1,0 +1,281 @@
+[
+    {
+        "page": "work",
+        "element": "div",
+        "classes": "work__year",
+        "contents": "Year",
+        "label" : true
+    },
+    {
+        "page": "work",
+        "element": "div",
+        "classes": "work__employer",
+        "contents": "Employer",
+        "label" : true
+    },
+    {
+        "page": "work",
+        "element": "div",
+        "classes": "work__description",
+        "contents": "Description",
+        "label" : true
+    },
+    {
+        "page" : "work",
+        "element" : "div",
+        "classes" : ["work__a1"],
+        "contents" : "2020",
+        "column" : 0
+    },
+    {
+        "page": "work",
+        "element" : "div",
+        "classes" : ["work__b1"],
+        "contents" : "2020",
+        "column" : 0
+    },
+    {
+        "page" : "work",
+        "element" : "div",
+        "classes" : ["work__c1"],
+        "contents" : "2019",
+        "column" : 0
+    },
+    {
+        "page" : "work",
+        "element" : "div",
+        "classes" : ["work__d1"],
+        "contents" : "2015 – 2016",
+        "column" : 0
+    },
+    {
+        "page" : "work",
+        "element" : "div",
+        "classes" : ["work__e1"],
+        "contents" : "2014 – 2015",
+        "column" : 0
+    },
+    {
+        "page" : "work",
+        "element" : "div",
+        "classes" : ["work__f1"],
+        "contents" : "2014",
+        "column" : 0
+    },
+    {
+        "page" : "work",
+        "element" : "div",
+        "classes" : ["work__g1"],
+        "contents" : "2014",
+        "column" : 0
+    },
+    {
+        "page" : "work",
+        "element" : "div",
+        "classes" : ["work__h1"],
+        "contents" : "2014",
+        "column" : 0
+    },
+    {
+        "page" : "work",
+        "element" : "div",
+        "classes" : ["work__i1"],
+        "contents" : "2014",
+        "column" : 0
+    },
+    {
+        "page" : "work",
+        "element" : "div",
+        "classes" : ["work__j1"],
+        "contents" : "2013",
+        "column" : 0
+    },
+    {
+        "page" : "work",
+        "element" : "div",
+        "classes" : ["work__k1"],
+        "contents" : "2011 – 2015",
+        "column" : 0
+    },
+    {
+        "page" : "work",
+        "element" : "div",
+        "classes" : ["work__l1"],
+        "contents" : "2006 – 2009",
+        "column" : 0
+    },
+    {
+        "page" : "work",
+        "element" : "div",
+        "classes" : ["work__a2"],
+        "contents" : "Uppsala University",
+        "column" : 1
+    },
+    {
+        "page" : "work",
+        "element" : "div",
+        "classes" : ["work__b2"],
+        "contents" : "Uppsala University",
+        "column" : 1
+    },
+    {
+        "page" : "work",
+        "element" : "div",
+        "classes" : ["work__c2"],
+        "contents" : "Uppsala University",
+        "column" : 1
+    },
+    {
+        "page" : "work",
+        "element" : "div",
+        "classes" : ["work__d2"],
+        "contents" : "Lernia Utbildning AB",
+        "column" : 1
+    },
+    {
+        "page" : "work",
+        "element" : "div",
+        "classes" : ["work__e2"],
+        "contents" : "Uppsala University",
+        "column" : 1
+    },
+    {
+        "page" : "work",
+        "element" : "div",
+        "classes" : ["work__f2"],
+        "contents" : "Lärarförmedlarna",
+        "column" : 1
+    },
+    {
+        "page" : "work",
+        "element" : "div",
+        "classes" : ["work__g2"],
+        "contents" : "MyAcademy",
+        "column" : 1
+    },
+    {
+        "page" : "work",
+        "element" : "div",
+        "classes" : ["work__h2"],
+        "contents" : "Väsbyskolan",
+        "column" : 1
+    },
+    {
+        "page" : "work",
+        "element" : "div",
+        "classes" : ["work__i2"],
+        "contents" : "Tamam",
+        "column" : 1
+    },
+    {
+        "page" : "work",
+        "element" : "div",
+        "classes" : ["work__j2"],
+        "contents" : "Uppsala University",
+        "column" : 1
+    },
+    {
+        "page" : "work",
+        "element" : "div",
+        "classes" : ["work__k2"],
+        "contents" : "ICA Supermarket AB",
+        "column" : 1
+    },
+    {
+        "page" : "work",
+        "element" : "div",
+        "classes" : ["work__l2"],
+        "contents" : "UC AB",
+        "column" : 1
+    },
+    {
+        "page" : "work",
+        "element" : "div",
+        "classes" : ["work__a3"],
+        "contents" : "Kursadministratör. Ansvarade för strukturering och överföring av tre olika språkkurser till universitetets nya LMS.",
+        "column" : 2
+    },
+    {
+        "page" : "work",
+        "element" : "div",
+        "classes" : ["work__b3"],
+        "contents" : "Lärare i arabiska. Lade upp lektioner, förberedde materiel, undervisade och rättade tentamen.",
+        "column" : 2
+    },
+    {
+        "page" : "work",
+        "element" : "div",
+        "classes" : ["work__c3"],
+        "contents" : "Forskningsassistent. Genomförde lingvistiska experiment med informanter och rapporterade resultaten till ansvarig för studien.",
+        "column" : 2
+    },
+    {
+        "page" : "work",
+        "element" : "div",
+        "classes" : ["work__d3"],
+        "contents" : "Lärare. Undervisade vuxna i Svenska för invandrare. Innefattade förutom undervisning även individuell målsättning, verksamhetsutveckling samt examination och ansvar för nationella prov.",
+        "column" : 2
+    },
+    {
+        "page" : "work",
+        "element" : "div",
+        "classes" : ["work__e3"],
+        "contents" : "Kursadministratör. Administrerade kursen ”Den Moderna Arabvärlden” på Institutionen för lingvistik och filiologi. Innefattade bland annat kontakt med elever och föreläsare samt betygssättning.",
+        "column" : 2
+    },
+    {
+        "page" : "work",
+        "element" : "div",
+        "classes" : ["work__f3"],
+        "contents" : "Lärarvikarie. Vikarierade vid behov som SFI- och komvuxlärare på skolor i Uppsala och Stockholm.",
+        "column" : 2
+    },
+    {
+        "page" : "work",
+        "element" : "div",
+        "classes" : ["work__g3"],
+        "contents" : "Studiecoach. Arbetade tillsammans med en högstadieelev att förbättra dennes studieresultat",
+        "column" : 2
+    },
+    {
+        "page" : "work",
+        "element" : "div",
+        "classes" : ["work__h3"],
+        "contents" : "Vikarie. Höll i undervisning för grundeskoleklasser vid sjukdom eller ledighet.",
+        "column" : 2
+    },
+    {
+        "page" : "work",
+        "element" : "div",
+        "classes" : ["work__i3"],
+        "contents" : "Praktikant. Handhade administrativa uppgifter så som stipendieansökningar, lokalarrangemang, kontakt med nya volontärer, produktion av informationsmaterial etc. Var även delaktig i aktiviteter, läxläsning och läger.",
+        "column" : 2
+    },
+    {
+        "page" : "work",
+        "element" : "div",
+        "classes" : ["work__j3"],
+        "contents" : "Lärarassistent. Medverkade i undervisningen för kursen Arabvärldens moderna historia. Höll i examinerande seminarier.",
+        "column" : 2
+    },
+    {
+        "page" : "work",
+        "element" : "div",
+        "classes" : ["work__k3"],
+        "contents" : "Butiksanställd. Arbetade extra i ett antal roller, bl.a. kassabiträde, postansvarig, charkuterist, och frukt- och gröntansvarig.",
+        "column" : 2
+    },
+    {
+        "page" : "work",
+        "element" : "div",
+        "classes" : ["work__l3"],
+        "contents" : "Kundansvarig. Började som extraarbetande med registrering av kreditansökningar. Blev senare befordrad till kundansvarig med uppgiften att sköta daglig kontakt med företagskunder.",
+        "column" : 2
+    },
+    {
+        "page" : "work",
+        "element" : "div",
+        "classes" : ["work__bottom"],
+        "contents" : ""
+    }
+]
