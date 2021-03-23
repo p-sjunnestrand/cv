@@ -14,7 +14,7 @@ body{
     color: #00ff00;
     background-color: black;
 }
-
+/*TODO: make media querries for background image. Max is TV-size.*/
 .main-grid {
   display: grid;
   grid-template-columns: 15vw 25vw 20vw 25vw 15vw;
@@ -30,15 +30,18 @@ body{
     "border-l border-b border-b border-b border-r";
     
 }
-.monitor-tb{
-    max-width: 100%;
-}
-.monitor-lr{
-    max-height: 100%;
-}
+// .monitor-tb{
+//     max-width: 100%;
+// }
+// .monitor-lr{
+//     max-height: 100%;
+// }
 .main-content { 
     grid-area: main;
     overflow-y: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
     /*background: radial-gradient(circle, rgba(25,25,25,1) 0%, rgba(0,0,0,1) 100%);*/
 }
 .border-t { grid-area: border-t; /*background-image: url(../img/g54.png);*/}
@@ -68,6 +71,8 @@ a{
     top: 0px;
     background: #00ff00;
     margin: 0;
+    width: 100%;
+    height: fit-content;
 }
 .menu{
     display: flex;
@@ -258,8 +263,8 @@ a{
 }
 .appWindow{
     border: 1px solid lime;
-    width: 600px;
-    height: 300px;
+    width: 60%;
+    height: 40%;
     flex-wrap: wrap;
     display: flex;
     position: absolute;
@@ -268,7 +273,7 @@ a{
     background-color: black;
 }
 .escBtn{
-    width: 10%;
+    width: 5%;
     border: 1px solid lime;
     box-sizing: border-box;
     text-align: center;
@@ -277,7 +282,7 @@ a{
 }
 .appBar{
     background-color: lime;
-    width: 90%;
+    width: 95%;
     color: black;
     overflow: hidden;
 }
@@ -488,9 +493,11 @@ a{
         flex-grow: 0;
     }
 }
-// #dynamicCont{
-//     height: auto;
-// }
+#dynamicCont{
+    height: 100%;
+    width: 100%;
+    // display: flex;
+}
 
 
 /*------------------------------------------------------------------------------------------------------------------------------

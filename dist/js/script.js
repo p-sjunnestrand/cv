@@ -33,7 +33,7 @@ document.getElementById('btn-portfolio').addEventListener('click', function(){
 function pageOne (){
     const personalInfo = document.createElement('section'); //personal info grid wrapper
     personalInfo.classList.add('personal-info');
-    personalInfo.classList.add('main-content');
+    // personalInfo.classList.add('main-content');
     document.getElementById('dynamicCont').appendChild(personalInfo);//adds personal info to main content
 
     const personalInfoTop = document.createElement('div'); //top part of personal info page containing tech-talk
@@ -81,7 +81,7 @@ function pageOne (){
 
 function pageTwo () {
     const modulesMain = document.createElement('section'); //modules main
-    modulesMain.setAttribute('class', 'main-content modules');
+    modulesMain.setAttribute('class', 'modules'/*'main-content modules'*/);
     document.getElementById('dynamicCont').appendChild(modulesMain);//adds modules to main content
 
     const modulesHeading = document.createElement('div'); //adds modules header
@@ -100,29 +100,29 @@ function pageTwo () {
     modulesMain.append(langTech, webProc, eduMod);
     let langTechWindow;
     let langTechContents = `<p> Module enables two-way communication in selected languages. 
-    // The MENA-package includes Arabic, Sorani Kurdish and Hebrew.
-    // Note that skill in each individual language is controlled by amount of allocated memory. 
-    // The currently used AKH-program allocates memory as follows:</p>
-    // <div class="languages">
-    //     <div class="languages__a1 label">Language</div>
-    //     <div class="languages__a2 label">Memory</div>
-    //     <div class="languages__a3 label">Skill</div>
-    //     <div class="languages__b1">Swedish</div>
-    //     <div class="languages__b2">320kB</div>
-    //     <div class="languages__b3">*****</div>
-    //     <div class="languages__c1">English</div>
-    //     <div class="languages__c2">320kB</div>
-    //     <div class="languages__c3">*****</div>
-    //     <div class="languages__d1">Arbic</div>
-    //     <div class="languages__d2">256kB</div>
-    //     <div class="languages__d3">****<span class="faded-asterisk">*</span></div>
-    //     <div class="languages__e1">Sorani</div>
-    //     <div class="languages__e2">128kB</div>
-    //     <div class="languages__e3">**<span class="faded-asterisk">***</span></div>
-    //     <div class="languages__f1">Hebrew</div>
-    //     <div class="languages__f2">64kB</div>
-    //     <div class="languages__f3">*<span class="faded-asterisk">****</span></div>
-    // </div>`;
+    The MENA-package includes Arabic, Sorani Kurdish and Hebrew.
+    Note that skill in each individual language is controlled by amount of allocated memory. 
+    The currently used AKH-program allocates memory as follows:</p>
+    <div class="languages">
+        <div class="languages__a1 label">Language</div>
+        <div class="languages__a2 label">Memory</div>
+        <div class="languages__a3 label">Skill</div>
+        <div class="languages__b1">Swedish</div>
+        <div class="languages__b2">320kB</div>
+        <div class="languages__b3">*****</div>
+        <div class="languages__c1">English</div>
+        <div class="languages__c2">320kB</div>
+        <div class="languages__c3">*****</div>
+        <div class="languages__d1">Arbic</div>
+        <div class="languages__d2">256kB</div>
+        <div class="languages__d3">****<span class="faded-asterisk">*</span></div>
+        <div class="languages__e1">Sorani</div>
+        <div class="languages__e2">128kB</div>
+        <div class="languages__e3">**<span class="faded-asterisk">***</span></div>
+        <div class="languages__f1">Hebrew</div>
+        <div class="languages__f2">64kB</div>
+        <div class="languages__f3">*<span class="faded-asterisk">****</span></div>
+    </div>`;
 
     langTech.innerHTML = `<div class='itemPic' id = 'langTech';>ق</div><div class = 'itemText'>LangTech 400</div>`;//`<h1 class="modules__names heading">LangTech 400</h1>
     langTech.addEventListener('click', ()=>{
@@ -170,7 +170,7 @@ function pageTwo () {
     eduMod.innerHTML = `<img src='img/students-cap.png' alt = 'picture of stylized student cap' class = 'itemPic'><div class = 'itemText'>EduMod Alpha</div>`;//`<h1 class="modules__names heading">EduMod Alpha</h1>
     // <p>Grants enhanced pedagogical abilities.</p>`;
 }
-function moduleExpand (appWindow) {
+function moduleExpand (appWindow, moduleContents) {
     appWindow = document.createElement('div');
     appWindow.classList.add('appWindow');
     let escBtn = document.createElement('div');
@@ -178,13 +178,19 @@ function moduleExpand (appWindow) {
     escBtn.innerHTML = 'X';
     appWindow.appendChild(escBtn);
     let appBar = document.createElement('div');
-    appBar.innerHTML = '::::::::::::::::::::::::::::::::::::::::::::::';
+    appBar.innerHTML = '::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::';
     appBar.classList.add('appBar');
     appWindow.appendChild(appBar);
     let appContents = document.createElement('div');
+    appContents.innerHTML = moduleContents;
     appContents.classList.add('appContents');
+    appWindow.appendChild(appContents);
 
     document.querySelector('.modules').appendChild(appWindow);
+
+    escBtn.addEventListener('click', ()=>{
+        appWindow.remove();
+    });
     // document.querySelector('.window').classList.add('expand');
 }
     // ------------------------------------------------------------------------------------------------------------------
@@ -196,7 +202,7 @@ function moduleExpand (appWindow) {
 let workMain;
 function pageThree () {
     workMain = document.createElement('section'); //work main
-    workMain.setAttribute('class', 'main-content work');
+    workMain.setAttribute('class', 'work'/*'main-content work'*/);
     document.getElementById('dynamicCont').appendChild(workMain);//adds work to main content
 
     const workTop = document.createElement('div'); //work heading
@@ -237,7 +243,7 @@ function workContent() {
 
 function pageFour () {
     const educationMain = document.createElement('section'); //education main
-    educationMain.setAttribute('class', 'main-content education');
+    educationMain.setAttribute('class', 'education'/*'main-content education'*/);
     document.getElementById('dynamicCont').appendChild(educationMain);//adds education to main content
 
     const educationTop = document.createElement('div');
@@ -277,7 +283,7 @@ function pageFour () {
 
 function pageFive () {
     const portfolioMain = document.createElement('section'); //portfolio main
-    portfolioMain.setAttribute('class', 'main-content portfolio');
+    portfolioMain.setAttribute('class', 'portfolio'/*'main-content portfolio'*/);
     document.getElementById('dynamicCont').appendChild(portfolioMain);//adds portfolio to main content
 
     let portfolioTop = document.createElement('div');
