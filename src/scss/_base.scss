@@ -43,17 +43,17 @@ body{
     overflow-y: auto;
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    align-content: flex-start;
     /*background: radial-gradient(circle, rgba(25,25,25,1) 0%, rgba(0,0,0,1) 100%);*/
 }
-.border-t { grid-area: border-t; /*background-image: url(../img/g54.png);*/}
+#dynamicCont{
+    height: auto;
+    width: 100%;
+}
+.border-t { grid-area: border-t;}
 .border-b { grid-area: border-b;}
 .border-l { grid-area: border-l;}
 .border-r { grid-area: border-r;}
-/*.border-tr { background: rgb(74,74,74); background: radial-gradient(circle at 0% 100%, rgba(74,74,74,1) 0%, rgba(185,185,185,1) 100%);}
-.border-br { background: rgb(74,74,74); background: radial-gradient(circle at 0% 0%, rgba(74,74,74,1) 0%, rgba(185,185,185,1) 100%);}
-.border-bl { background: rgb(74,74,74); background: radial-gradient(circle at 100% 0%, rgba(74,74,74,1) 0%, rgba(185,185,185,1) 100%);}
-.border-tl { background: rgb(74,74,74); background: radial-gradient(circle at 100% 100%, rgba(74,74,74,1) 0%, rgba(185,185,185,1) 100%);}*/
 
 a{
     text-decoration: inherit;
@@ -267,13 +267,10 @@ a{
     border: 1px solid lime;
     width: 60%;
     min-height: 40%;
-    // flex-wrap: wrap;
-    // display: flex;
     position: absolute;
     overflow: hidden;
     top: 210px;
     background-color: black;
-    // justify-content: flex-start;
 }
 .appTopBar{
     display: flex;
@@ -304,15 +301,6 @@ a{
     height: 95%;
     padding: 1px;
 }
-// #appIcon{
-//     width: 50px;
-//     height: 50px;
-//     cursor: pointer;
-//     background-color: lime;
-// }
-// .appExpand{
-//     display: flex;
-// }
 
 /*--------------------------------------------------------------------------------------------------------------------
 ---------------------------- ____   ___    ___   ____    ______ __  __ ____   ____  ____-----------------------------
@@ -330,7 +318,7 @@ a{
     /*min-height: 100vh;*/
     grid-template-areas:
         "info info info info info"
-        "year emp desc desc desc"
+        "year plc desc desc desc"
         "a1 a2 a3 a3 a3"
         "b1 b2 b3 b3 b3"
         "c1 c2 c3 c3 c3"
@@ -356,58 +344,55 @@ a{
         border-width: 1px 1px 0px;
         border-top: 1px dashed #00ff00;
         padding: 3px;
+        &:last-child{
+            border-bottom-width: 1px;
+        }
     }
-    .item-btm{
-        border-bottom-width: 1px;
-    }
-    .work__l1{grid-area: l1; border-bottom-width: 1px;}
-    .work__l2{grid-area: l2; border-bottom-width: 1px;}
-    .work__l3{grid-area: l3; border-bottom-width: 1px;}
 }
 
 .work__top{grid-area: info;}
-.work__year{grid-area: year; background-color: #00ff00;
+.gridYear{grid-area: year; background-color: #00ff00;
     color: black;}
-.work__employer{grid-area: emp; background-color: #00ff00;
+.gridPlace{grid-area: plc; background-color: #00ff00;
     color: black;}
-.work__description{grid-area: desc; background-color: #00ff00;
+.gridDescription{grid-area: desc; background-color: #00ff00;
     color: black;}
-.work__a1{grid-area: a1;}
-.work__a2{grid-area: a2;}
-.work__a3{grid-area: a3;}
-.work__b1{grid-area: b1;}
-.work__b2{grid-area: b2;}
-.work__b3{grid-area: b3;}
-.work__c1{grid-area: c1;}
-.work__c2{grid-area: c2;}
-.work__c3{grid-area: c3;}
-.work__d1{grid-area: d1;}
-.work__d2{grid-area: d2;}
-.work__d3{grid-area: d3;}
-.work__e1{grid-area: e1;}
-.work__e2{grid-area: e2;}
-.work__e3{grid-area: e3;}
-.work__f1{grid-area: f1;}
-.work__f2{grid-area: f2;}
-.work__f3{grid-area: f3;}
-.work__g1{grid-area: g1;}
-.work__g2{grid-area: g2;}
-.work__g3{grid-area: g3;}
-.work__h1{grid-area: h1;}
-.work__h2{grid-area: h2;}
-.work__h3{grid-area: h3;}
-.work__i1{grid-area: i1;}
-.work__i2{grid-area: i2;}
-.work__i3{grid-area: i3;}
-.work__j1{grid-area: j1;}
-.work__j2{grid-area: j2;}
-.work__j3{grid-area: j3;}
-.work__k1{grid-area: k1;}
-.work__k2{grid-area: k2;}
-.work__k3{grid-area: k3;}
-.work__l1{grid-area: l1; border-bottom-width: 1px;}
-.work__l2{grid-area: l2; border-bottom-width: 1px;}
-.work__l3{grid-area: l3; border-bottom: solid 1px #00ff00;}
+.a1{grid-area: a1;}
+.a2{grid-area: a2;}
+.a3{grid-area: a3;}
+.b1{grid-area: b1;}
+.b2{grid-area: b2;}
+.b3{grid-area: b3;}
+.c1{grid-area: c1;}
+.c2{grid-area: c2;}
+.c3{grid-area: c3;}
+.d1{grid-area: d1;}
+.d2{grid-area: d2;}
+.d3{grid-area: d3;}
+.e1{grid-area: e1;}
+.e2{grid-area: e2;}
+.e3{grid-area: e3;}
+.f1{grid-area: f1;}
+.f2{grid-area: f2;}
+.f3{grid-area: f3;}
+.g1{grid-area: g1;}
+.g2{grid-area: g2;}
+.g3{grid-area: g3;}
+.h1{grid-area: h1;}
+.h2{grid-area: h2;}
+.h3{grid-area: h3;}
+.i1{grid-area: i1;}
+.i2{grid-area: i2;}
+.i3{grid-area: i3;}
+.j1{grid-area: j1;}
+.j2{grid-area: j2;}
+.j3{grid-area: j3;}
+.k1{grid-area: k1;}
+.k2{grid-area: k2;}
+.k3{grid-area: k3;}
+.l1{grid-area: l1;}
+.l2{grid-area: l2;}
+.l3{grid-area: l3;}
 
 /*--------------------------------------------------------------------------------------------------------------
 ----------------------------- ____   ___    ___   ____     ____   ___   __ __ ____ -----------------------------
@@ -421,17 +406,18 @@ a{
 }
 .edu__top{
     width: 100%;
+    text-align: center;
 }
 .eduGrid{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(7, 1fr);
+    grid-template-rows: repeat(7, auto);
     width: 100%;
     // height: auto;
     // min-height: 100vh;
     grid-template-areas:
         // "info info info info info"
-        "year school desc desc desc"
+        "year plc desc desc desc"
         "a1 a2 a3 a3 a3"
         "b1 b2 b3 b3 b3"
         "c1 c2 c3 c3 c3"
@@ -442,7 +428,7 @@ a{
 }
 // .edu__top{grid-area: info;}
 .edu__year{grid-area: year; color: black; background-color: #00ff00;}
-.edu__school{grid-area: school; color: black; background-color: #00ff00;}
+.edu__school{grid-area: plc; color: black; background-color: #00ff00;}
 .edu__description{grid-area: desc; color: black; background-color: #00ff00;}
 .edu__a1{grid-area: a1;}
 .edu__a2{grid-area: a2;}
@@ -468,9 +454,9 @@ a{
  -------------------------------------||    || ||  \\_|| ||___    ||    ||  \V/  ||___------------------------------------------
  -----------------------------------------------------------------------------------------------------------------------------*/
 
- .portfolio{
-    border-top: 1px dashed #00ff00;
- }
+//  .portfolio{
+//     border-top: 1px dashed #00ff00;
+//  }
 .portfolio-container{
     display: flex;
     width: 100%;
@@ -513,11 +499,7 @@ a{
         flex-grow: 0;
     }
 }
-#dynamicCont{
-    height: 100%;
-    width: 100%;
-    // display: flex;
-}
+
 
 
 /*------------------------------------------------------------------------------------------------------------------------------

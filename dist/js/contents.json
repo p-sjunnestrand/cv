@@ -2,7 +2,7 @@
     {
         "page": "work",
         "element": "div",
-        "classes": "work__year",
+        "classes": "gridYear",
         "contents": "Year",
         "label" : true,
         "column": 0
@@ -10,7 +10,7 @@
     {
         "page": "work",
         "element": "div",
-        "classes": "work__employer",
+        "classes": "gridPlace",
         "contents": "Employer",
         "label" : true,
         "column": 1
@@ -18,7 +18,7 @@
     {
         "page": "work",
         "element": "div",
-        "classes": "work__description",
+        "classes": "gridDescription",
         "contents": "Description",
         "label" : true,
         "column": 2
@@ -26,252 +26,252 @@
     {
         "page" : "work",
         "element" : "div",
-        "classes" : ["work__a1"],
+        "classes" : "a1",
         "contents" : "2020",
         "column" : 0
     },
     {
         "page": "work",
         "element" : "div",
-        "classes" : ["work__b1"],
+        "classes" : "b1",
         "contents" : "2020",
         "column" : 0
     },
     {
         "page" : "work",
         "element" : "div",
-        "classes" : ["work__c1"],
+        "classes" : ["c1"],
         "contents" : "2019",
         "column" : 0
     },
     {
         "page" : "work",
         "element" : "div",
-        "classes" : ["work__d1"],
+        "classes" : ["d1"],
         "contents" : "2015 – 2016",
         "column" : 0
     },
     {
         "page" : "work",
         "element" : "div",
-        "classes" : ["work__e1"],
+        "classes" : ["e1"],
         "contents" : "2014 – 2015",
         "column" : 0
     },
     {
         "page" : "work",
         "element" : "div",
-        "classes" : ["work__f1"],
+        "classes" : ["f1"],
         "contents" : "2014",
         "column" : 0
     },
     {
         "page" : "work",
         "element" : "div",
-        "classes" : ["work__g1"],
+        "classes" : ["g1"],
         "contents" : "2014",
         "column" : 0
     },
     {
         "page" : "work",
         "element" : "div",
-        "classes" : ["work__h1"],
+        "classes" : ["h1"],
         "contents" : "2014",
         "column" : 0
     },
     {
         "page" : "work",
         "element" : "div",
-        "classes" : ["work__i1"],
+        "classes" : ["i1"],
         "contents" : "2014",
         "column" : 0
     },
     {
         "page" : "work",
         "element" : "div",
-        "classes" : ["work__j1"],
+        "classes" : ["j1"],
         "contents" : "2013",
         "column" : 0
     },
     {
         "page" : "work",
         "element" : "div",
-        "classes" : ["work__k1"],
+        "classes" : ["k1"],
         "contents" : "2011 – 2015",
         "column" : 0
     },
     {
         "page" : "work",
         "element" : "div",
-        "classes" : ["work__l1"],
+        "classes" : ["l1"],
         "contents" : "2006 – 2009",
         "column" : 0
     },
     {
         "page" : "work",
         "element" : "div",
-        "classes" : ["work__a2"],
+        "classes" : ["a2"],
         "contents" : "Uppsala University",
         "column" : 1
     },
     {
         "page" : "work",
         "element" : "div",
-        "classes" : ["work__b2"],
+        "classes" : ["b2"],
         "contents" : "Uppsala University",
         "column" : 1
     },
     {
         "page" : "work",
         "element" : "div",
-        "classes" : ["work__c2"],
+        "classes" : ["c2"],
         "contents" : "Uppsala University",
         "column" : 1
     },
     {
         "page" : "work",
         "element" : "div",
-        "classes" : ["work__d2"],
+        "classes" : ["d2"],
         "contents" : "Lernia Utbildning AB",
         "column" : 1
     },
     {
         "page" : "work",
         "element" : "div",
-        "classes" : ["work__e2"],
+        "classes" : ["e2"],
         "contents" : "Uppsala University",
         "column" : 1
     },
     {
         "page" : "work",
         "element" : "div",
-        "classes" : ["work__f2"],
+        "classes" : ["f2"],
         "contents" : "Lärarförmedlarna",
         "column" : 1
     },
     {
         "page" : "work",
         "element" : "div",
-        "classes" : ["work__g2"],
+        "classes" : ["g2"],
         "contents" : "MyAcademy",
         "column" : 1
     },
     {
         "page" : "work",
         "element" : "div",
-        "classes" : ["work__h2"],
+        "classes" : ["h2"],
         "contents" : "Väsbyskolan",
         "column" : 1
     },
     {
         "page" : "work",
         "element" : "div",
-        "classes" : ["work__i2"],
+        "classes" : ["i2"],
         "contents" : "Tamam",
         "column" : 1
     },
     {
         "page" : "work",
         "element" : "div",
-        "classes" : ["work__j2"],
+        "classes" : ["j2"],
         "contents" : "Uppsala University",
         "column" : 1
     },
     {
         "page" : "work",
         "element" : "div",
-        "classes" : ["work__k2"],
+        "classes" : ["k2"],
         "contents" : "ICA Supermarket AB",
         "column" : 1
     },
     {
         "page" : "work",
         "element" : "div",
-        "classes" : ["work__l2"],
+        "classes" : ["l2"],
         "contents" : "UC AB",
         "column" : 1
     },
     {
         "page" : "work",
         "element" : "div",
-        "classes" : ["work__a3"],
+        "classes" : ["a3"],
         "contents" : "Kursadministratör. Ansvarade för strukturering och överföring av tre olika språkkurser till universitetets nya LMS.",
         "column" : 2
     },
     {
         "page" : "work",
         "element" : "div",
-        "classes" : ["work__b3"],
+        "classes" : ["b3"],
         "contents" : "Lärare i arabiska. Lade upp lektioner, förberedde materiel, undervisade och rättade tentamen.",
         "column" : 2
     },
     {
         "page" : "work",
         "element" : "div",
-        "classes" : ["work__c3"],
+        "classes" : ["c3"],
         "contents" : "Forskningsassistent. Genomförde lingvistiska experiment med informanter och rapporterade resultaten till ansvarig för studien.",
         "column" : 2
     },
     {
         "page" : "work",
         "element" : "div",
-        "classes" : ["work__d3"],
+        "classes" : ["d3"],
         "contents" : "Lärare. Undervisade vuxna i Svenska för invandrare. Innefattade förutom undervisning även individuell målsättning, verksamhetsutveckling samt examination och ansvar för nationella prov.",
         "column" : 2
     },
     {
         "page" : "work",
         "element" : "div",
-        "classes" : ["work__e3"],
+        "classes" : ["e3"],
         "contents" : "Kursadministratör. Administrerade kursen ”Den Moderna Arabvärlden” på Institutionen för lingvistik och filiologi. Innefattade bland annat kontakt med elever och föreläsare samt betygssättning.",
         "column" : 2
     },
     {
         "page" : "work",
         "element" : "div",
-        "classes" : ["work__f3"],
+        "classes" : ["f3"],
         "contents" : "Lärarvikarie. Vikarierade vid behov som SFI- och komvuxlärare på skolor i Uppsala och Stockholm.",
         "column" : 2
     },
     {
         "page" : "work",
         "element" : "div",
-        "classes" : ["work__g3"],
+        "classes" : ["g3"],
         "contents" : "Studiecoach. Arbetade tillsammans med en högstadieelev att förbättra dennes studieresultat",
         "column" : 2
     },
     {
         "page" : "work",
         "element" : "div",
-        "classes" : ["work__h3"],
+        "classes" : ["h3"],
         "contents" : "Vikarie. Höll i undervisning för grundeskoleklasser vid sjukdom eller ledighet.",
         "column" : 2
     },
     {
         "page" : "work",
         "element" : "div",
-        "classes" : ["work__i3"],
+        "classes" : ["i3"],
         "contents" : "Praktikant. Handhade administrativa uppgifter så som stipendieansökningar, lokalarrangemang, kontakt med nya volontärer, produktion av informationsmaterial etc. Var även delaktig i aktiviteter, läxläsning och läger.",
         "column" : 2
     },
     {
         "page" : "work",
         "element" : "div",
-        "classes" : ["work__j3"],
+        "classes" : ["j3"],
         "contents" : "Lärarassistent. Medverkade i undervisningen för kursen Arabvärldens moderna historia. Höll i examinerande seminarier.",
         "column" : 2
     },
     {
         "page" : "work",
         "element" : "div",
-        "classes" : ["work__k3"],
+        "classes" : ["k3"],
         "contents" : "Butiksanställd. Arbetade extra i ett antal roller, bl.a. kassabiträde, postansvarig, charkuterist, och frukt- och gröntansvarig.",
         "column" : 2
     },
     {
         "page" : "work",
         "element" : "div",
-        "classes" : ["work__l3"],
+        "classes" : ["l3"],
         "contents" : "Kundansvarig. Började som extraarbetande med registrering av kreditansökningar. Blev senare befordrad till kundansvarig med uppgiften att sköta daglig kontakt med företagskunder.",
         "column" : 2
     },
@@ -284,7 +284,7 @@
     {
         "page" : "education",
         "element" : "div",
-        "classes" : ["edu__year"],
+        "classes" : ["gridYear"],
         "contents" : "Graduation Year",
         "label" : true,
         "column": 0
@@ -292,7 +292,7 @@
     {
         "page" : "education",
         "element" : "div",
-        "classes" : ["edu__school"],
+        "classes" : ["gridPlace"],
         "contents" : "School",
         "label" : true,
         "column": 1
@@ -300,7 +300,7 @@
     {
         "page" : "education",
         "element" : "div",
-        "classes" : ["edu__description"],
+        "classes" : ["gridDescription"],
         "contents" : "Program",
         "label" : true,
         "column": 2
@@ -308,105 +308,105 @@
     {
         "page" : "education",
         "element" : "div",
-        "classes" : ["edu__a1"],
+        "classes" : ["a1"],
         "contents" : "2022",
         "column": 0 
     },
     {
         "page" : "education",
         "element" : "div",
-        "classes" : ["edu__a2"],
+        "classes" : ["a2"],
         "contents" : "Medieinstitutet",
         "column": 1 
     },
     {
         "page" : "education",
         "element" : "div",
-        "classes" : "edu__a3",
+        "classes" : "a3",
         "contents" : "Front End Developer. Vocational education (YH)",
         "column": 2
     },
     {
         "page" : "education",
         "element" : "div",
-        "classes" : "edu__b1",
+        "classes" : "b1",
         "contents" : "2019",
         "column": 0
     },
     {
         "page" : "education",
         "element" : "div",
-        "classes" : "edu__b2",
+        "classes" : "b2",
         "contents" : "Uppsala University",
         "column": 1
     },
     {
         "page" : "education",
         "element" : "div",
-        "classes" : "edu__b3",
+        "classes" : "b3",
         "contents" : "Master's degree in Semitic languages",
         "column": 2
     },
     {
         "page" : "education",
         "element" : "div",
-        "classes" : "edu__c1",
+        "classes" : "c1",
         "contents" : "2013",
         "column": 0
     },
     {
         "page" : "education",
         "element" : "div",
-        "classes" : "edu__c2",
+        "classes" : "c2",
         "contents" : "Uppsala University",
         "column": 1
     },
     {
         "page" : "education",
         "element" : "div",
-        "classes" : "edu__c3",
+        "classes" : "c3",
         "contents" : "Bachelor's degree in Arabic",
         "column": 2
     },
     {
         "page" : "education",
         "element" : "div",
-        "classes" : "edu__d1",
+        "classes" : "d1",
         "contents" : "2006",
         "column": 0
     },
     {
         "page" : "education",
         "element" : "div",
-        "classes" : "edu__d2",
+        "classes" : "d2",
         "contents" : "Nacka Gymnaisum",
         "column": 1
     },
     {
         "page" : "education",
         "element" : "div",
-        "classes" : "edu__d3",
+        "classes" : "d3",
         "contents" : "High school diploma in social science/media",
         "column": 2
     },
     {
         "page" : "education",
         "element" : "div",
-        "classes" : "edu__e1",
+        "classes" : "e1",
         "contents" : "2005",
         "column": 0
     },
     {
         "page" : "education",
         "element" : "div",
-        "classes" : "edu__e2",
+        "classes" : "e2",
         "contents" : "Duluth East High School",
         "column": 1
     },
     {
         "page" : "education",
         "element" : "div",
-        "classes" : "edu__e3",
+        "classes" : "e3",
         "contents" : "One year high school studies in Minnesota as part of an exchange year.",
         "column": 2
     }

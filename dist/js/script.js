@@ -265,6 +265,7 @@ function pageFour () {
 
     const educationTop = document.createElement('div');
     educationTop.classList.add('edu__top');
+    educationTop.innerHTML = `<h1>EDUCATION.EXE</h1>`;
     educationMain.appendChild(educationTop);
 
     let educationGrid = document.createElement('article');
