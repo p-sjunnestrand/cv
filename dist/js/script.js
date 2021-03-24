@@ -98,35 +98,37 @@ function pageTwo () {
     eduMod.classList.add('modules__item');
     eduMod.id = 'eduMod';
     modulesMain.append(langTech, webProc, eduMod);
-    let langTechWindow;
-    let langTechContents = `<p> Module enables two-way communication in selected languages. 
+
+    let langTechContents = `<h2>LangTech 400</h2>
+    <p> Module enables two-way communication in selected languages. 
     The MENA-package includes Arabic, Sorani Kurdish and Hebrew.
     Note that skill in each individual language is controlled by amount of allocated memory. 
     The currently used AKH-program allocates memory as follows:</p>
-    <div class="languages">
-        <div class="languages__a1 label">Language</div>
-        <div class="languages__a2 label">Memory</div>
-        <div class="languages__a3 label">Skill</div>
-        <div class="languages__b1">Swedish</div>
-        <div class="languages__b2">320kB</div>
-        <div class="languages__b3">*****</div>
-        <div class="languages__c1">English</div>
-        <div class="languages__c2">320kB</div>
-        <div class="languages__c3">*****</div>
-        <div class="languages__d1">Arbic</div>
-        <div class="languages__d2">256kB</div>
-        <div class="languages__d3">****<span class="faded-asterisk">*</span></div>
-        <div class="languages__e1">Sorani</div>
-        <div class="languages__e2">128kB</div>
-        <div class="languages__e3">**<span class="faded-asterisk">***</span></div>
-        <div class="languages__f1">Hebrew</div>
-        <div class="languages__f2">64kB</div>
-        <div class="languages__f3">*<span class="faded-asterisk">****</span></div>
+    <div class="skills">
+        <div class="skills__a1 label">Language</div>
+        <div class="skills__a2 label">Memory</div>
+        <div class="skills__a3 label">Skill</div>
+        <div class="skills__b1">Swedish</div>
+        <div class="skills__b2">320kB</div>
+        <div class="skills__b3">*****</div>
+        <div class="skills__c1">English</div>
+        <div class="skills__c2">320kB</div>
+        <div class="skills__c3">*****</div>
+        <div class="skills__d1">Arabic</div>
+        <div class="skills__d2">256kB</div>
+        <div class="skills__d3">****<span class="faded-asterisk">*</span></div>
+        <div class="skills__e1">Sorani</div>
+        <div class="skills__e2">128kB</div>
+        <div class="skills__e3">**<span class="faded-asterisk">***</span></div>
+        <div class="skills__f1">Hebrew</div>
+        <div class="skills__f2">64kB</div>
+        <div class="skills__f3">*<span class="faded-asterisk">****</span></div>
     </div>`;
 
     langTech.innerHTML = `<div class='itemPic' id = 'langTech';>ق</div><div class = 'itemText'>LangTech 400</div>`;//`<h1 class="modules__names heading">LangTech 400</h1>
     langTech.addEventListener('click', ()=>{
-        moduleExpand(langTechWindow, langTechContents);
+        // let langTechWindow;
+        moduleExpand(langTechContents);
         // let langTechWindow = document.createElement('div');
         // langTechWindow.classList.add('appWindow');
         // let escBtn = document.createElement('div');
@@ -149,38 +151,50 @@ function pageTwo () {
     // });
     // `;
     webProc.innerHTML = `<img src='img/logo-websites-31321.png' alt = 'picture of stylized earth' class = 'itemPic'><div class = 'itemText'>WebProc-0.2</div>`;//`<h1 class="modules__names heading">WebProc-0.2</h1>
-    // <h2>(Beta)</h2>
-    // <p> The WebProc-0.2 (Beta) module enables skillful processing of web design tools including HTML, CSS & JavaScript.
-    // Note that the module is only in its Beta development stage and all features
-    // may not yet be 100% functional. The full release is expected in fall 2022. Allocated memory program below.</p>
-    // <div class="web-skills">
-    //     <div class="web-skills__a1 label">Tool</div>
-    //     <div class="web-skills__a2 label">Memory</div>
-    //     <div class="web-skills__a3 label">Skill</div>
-    //     <div class="web-skills__b1">HTML</div>
-    //     <div class="web-skills__b2">192kB</div>
-    //     <div class="web-skills__b3">***<span class="faded-asterisk">**</span></div>
-    //     <div class="web-skills__c1">CSS</div>
-    //     <div class="web-skills__c2">192kB</div>
-    //     <div class="web-skills__c3">***<span class="faded-asterisk">**</span></div>
-    //     <div class="web-skills__d1">JavaScript</div>
-    //     <div class="web-skills__d2">128kB</div>
-    //     <div class="web-skills__d3">**<span class="faded-asterisk">***</span></div>
-    // </div>`;
+    let webProcContents =  `<h2>WebProc-0.2 (Beta)</h2>
+    <p> The WebProc-0.2 (Beta) module enables skillful processing of web design tools including HTML, CSS & JavaScript.
+    Note that the module is only in its Beta development stage and all features
+    may not yet be 100% functional. The full release is expected in fall 2022. Allocated memory program below.</p>
+    <div class="skills">
+        <div class="skills__a1 label">Tool</div>
+        <div class="skills__a2 label">Memory</div>
+        <div class="skills__a3 label">Skill</div>
+        <div class="skills__b1">HTML</div>
+        <div class="skills__b2">192kB</div>
+        <div class="skills__b3">***<span class="faded-asterisk">**</span></div>
+        <div class="skills__c1">CSS</div>
+        <div class="skills__c2">192kB</div>
+        <div class="skills__c3">***<span class="faded-asterisk">**</span></div>
+        <div class="skills__d1">JavaScript</div>
+        <div class="skills__d2">128kB</div>
+        <div class="skills__d3">**<span class="faded-asterisk">***</span></div>
+    </div>`;
+
+    webProc.addEventListener('click', ()=>{
+        moduleExpand(webProcContents);
+    });
+    
     eduMod.innerHTML = `<img src='img/students-cap.png' alt = 'picture of stylized student cap' class = 'itemPic'><div class = 'itemText'>EduMod Alpha</div>`;//`<h1 class="modules__names heading">EduMod Alpha</h1>
-    // <p>Grants enhanced pedagogical abilities.</p>`;
+    let eduModContents = `<h2>EduMod Alpha</h2>
+        <p>Grants enhanced pedagogical abilities.</p>`;
+    eduMod.addEventListener('click', ()=>{
+        moduleExpand(eduModContents);
+    });
 }
-function moduleExpand (appWindow, moduleContents) {
+function moduleExpand (moduleContents) {
     appWindow = document.createElement('div');
     appWindow.classList.add('appWindow');
+    let appTopBar = document.createElement('div');
+    appTopBar.classList.add('appTopBar');
+    appWindow.appendChild(appTopBar);
     let escBtn = document.createElement('div');
     escBtn.classList.add('escBtn');
     escBtn.innerHTML = 'X';
-    appWindow.appendChild(escBtn);
+    appTopBar.appendChild(escBtn);
     let appBar = document.createElement('div');
     appBar.innerHTML = '::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::';
     appBar.classList.add('appBar');
-    appWindow.appendChild(appBar);
+    appTopBar.appendChild(appBar);
     let appContents = document.createElement('div');
     appContents.innerHTML = moduleContents;
     appContents.classList.add('appContents');

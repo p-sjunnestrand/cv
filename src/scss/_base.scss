@@ -13,7 +13,9 @@ body{
     background-repeat: no-repeat;
     color: #00ff00;
     background-color: black;
+    
 }
+
 /*TODO: make media querries for background image. Max is TV-size.*/
 .main-grid {
   display: grid;
@@ -242,38 +244,45 @@ a{
     background-color: #00ff00;
     color: black;
 }
-.languages{
-    width: 40%;
-    margin: 5em auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(7, 1fr);
-    gap: 3%;
-}
+// .languages{
+//     width: 40%;
+//     margin: 5em auto;
+//     display: grid;
+//     grid-template-columns: repeat(3, 1fr);
+//     grid-template-rows: repeat(7, 1fr);
+//     gap: 3%;
+// }
 .faded-asterisk{
     opacity: 0.1;
 }
-.web-skills{
+.skills{
     width: 40%;
     margin: 5em auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(7, 1fr);
+    grid-template-rows: repeat(6, 1fr);
     gap: 3%;
 }
 .appWindow{
     border: 1px solid lime;
     width: 60%;
-    height: 40%;
-    flex-wrap: wrap;
-    display: flex;
+    min-height: 40%;
+    // flex-wrap: wrap;
+    // display: flex;
     position: absolute;
     overflow: hidden;
     top: 210px;
     background-color: black;
+    // justify-content: flex-start;
+}
+.appTopBar{
+    display: flex;
+    height: 5%;
+    width: 100%;
 }
 .escBtn{
     width: 5%;
+    height: 100%;
     border: 1px solid lime;
     box-sizing: border-box;
     text-align: center;
@@ -283,8 +292,12 @@ a{
 .appBar{
     background-color: lime;
     width: 95%;
+    height: 100%;
     color: black;
     overflow: hidden;
+    border: 1px solid lime;
+    padding-top: 2px;
+    cursor: default;
 }
 .appContents{
     width: 100%;
@@ -407,8 +420,8 @@ a{
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(8, 1fr);
     width: 100%;
-    height: auto;
-    min-height: 100vh;
+    // height: auto;
+    // min-height: 100vh;
     grid-template-areas:
         "info info info info info"
         "year school desc desc desc"
