@@ -277,5 +277,116 @@
         "element" : "div",
         "classes" : ["work__bottom"],
         "contents" : ""
+    },
+    {
+        "page" : "education",
+        "element" : "div",
+        "classes" : ["edu__year"],
+        "contents" : "Graduation Year",
+        "label" : true
+    },
+    {
+        "page" : "education",
+        "element" : "div",
+        "classes" : ["edu__school"],
+        "contents" : "School",
+        "label" : true
+    },
+    {
+        "page" : "education",
+        "element" : "div",
+        "classes" : ["edu__description"],
+        "contents" : "Program",
+        "label" : true
+    },
+    {
+        "page" : "education",
+        "element" : "div",
+        "classes" : "edu__a1",
+        "contents" : "2022"
+    },
+    {
+        "page" : "education",
+        "element" : "div",
+        "classes" : "edu__a2",
+        "contents" : "Medieinstitutet"
+    },
+    {
+        "page" : "education",
+        "element" : "div",
+        "classes" : "edu__a3",
+        "contents" : "Front End Developer. Vocational education (YH)"
+    },
+    {
+        "page" : "education",
+        "element" : "div",
+        "classes" : "edu__b1",
+        "contents" : "2019"
+    },
+    {
+        "page" : "education",
+        "element" : "div",
+        "classes" : "edu__b2",
+        "contents" : "Uppsala University"
+    },
+    {
+        "page" : "education",
+        "element" : "div",
+        "classes" : "edu__b3",
+        "contents" : "Master's degree in Semitic languages"
+    },
+    {
+        "page" : "education",
+        "element" : "div",
+        "classes" : "edu__c1",
+        "contents" : "2013"
+    },
+    {
+        "page" : "education",
+        "element" : "div",
+        "classes" : "edu__c2",
+        "contents" : "Uppsala University"
+    },
+    {
+        "page" : "education",
+        "element" : "div",
+        "classes" : "edu__c3",
+        "contents" : "Bachelor's degree in Arabic"
+    },
+    {
+        "page" : "education",
+        "element" : "div",
+        "classes" : "edu__d1",
+        "contents" : "2006"
+    },
+    {
+        "page" : "education",
+        "element" : "div",
+        "classes" : "edu__d2",
+        "contents" : "Nacka Gymnaisum"
+    },
+    {
+        "page" : "education",
+        "element" : "div",
+        "classes" : "edu__d3",
+        "contents" : "High school diploma in social science/media"
+    },
+    {
+        "page" : "education",
+        "element" : "div",
+        "classes" : "edu__e1",
+        "contents" : "2005"
+    },
+    {
+        "page" : "education",
+        "element" : "div",
+        "classes" : "edu__e2",
+        "contents" : "Duluth East High School"
+    },
+    {
+        "page" : "education",
+        "element" : "div",
+        "classes" : "edu__e3",
+        "contents" : "One year high school studies in Minnesota as part of an exchange year."
     }
 ]

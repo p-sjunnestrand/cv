@@ -236,11 +236,11 @@ function workContent() {
             workMain.appendChild(columnWrapper);
             console.log(columnWrapper);
             for (obj in data) {
-                if (data[obj].label == true){
+                if (data[obj].label == true && data[obj].page == "work"){
                     workMain.insertAdjacentHTML('beforeend', `<div class = ${data[obj].classes}>${data[obj].contents}</div>`);
                     console.log(obj);
                 }
-                else if (data[obj].column == i){
+                else if (data[obj].column == i && data[obj].page == "work"){
                 console.log(data[obj]);
                 columnWrapper.insertAdjacentHTML('beforeend', `<div class = ${data[obj].classes}>${data[obj].contents}</div>`);
                 }
@@ -264,28 +264,32 @@ function pageFour () {
     educationTop.classList.add('edu__top');
     educationMain.appendChild(educationTop);
 
-    let educationWrp = document.createElement('div');
-    educationWrp.innerHTML = `<div class="edu__year">Graduation year</div>
-        <div class="edu__school">School</div>
-        <div class="edu__description">Program</div>
-        <!--Top row is a, Leftmost column is 1-->
-        <div class="edu__a1">2022</div>
-        <div class="edu__a2">Medieinstitutet</div>
-        <div class="edu__a3">Front End Developer. Vocational education (YH).</div>
-        <div class="edu__b1">2019</div>
-        <div class="edu__b2">Uppsala University</div>
-        <div class="edu__b3">Masters degree in Semitic languages.</div>
-        <div class="edu__c1">2013</div>
-        <div class="edu__c2">Uppsala University</div>
-        <div class="edu__c3">Bachelor's degree in Arabic</div>
-        <div class="edu__d1">2006</div>
-        <div class="edu__d2">Nacka Gymnasium</div>
-        <div class="edu__d3">High school diploma in social science/media</div>
-        <div class="edu__e1">2005</div>
-        <div class="edu__e2">Duluth East High School</div>
-        <div class="edu__e3">One year high school studies in Minnesota as part of an exchange year.</div>
-        <div class="edu__bottom"></div>`;
-    educationMain.appendChild(educationWrp);
+    const educationGrid = document.createElement('article');
+    educationGrid.classList.add('eduGrid');
+    educationMain.appendChild(educationGrid);
+
+    // let educationWrp = document.createElement('div');
+    // educationWrp.innerHTML = `<div class="edu__year">Graduation year</div>
+    //     <div class="edu__school">School</div>
+    //     <div class="edu__description">Program</div>
+    //     <!--Top row is a, Leftmost column is 1-->
+    //     <div class="edu__a1">2022</div>
+    //     <div class="edu__a2">Medieinstitutet</div>
+    //     <div class="edu__a3">Front End Developer. Vocational education (YH).</div>
+    //     <div class="edu__b1">2019</div>
+    //     <div class="edu__b2">Uppsala University</div>
+    //     <div class="edu__b3">Masters degree in Semitic languages.</div>
+    //     <div class="edu__c1">2013</div>
+    //     <div class="edu__c2">Uppsala University</div>
+    //     <div class="edu__c3">Bachelor's degree in Arabic</div>
+    //     <div class="edu__d1">2006</div>
+    //     <div class="edu__d2">Nacka Gymnasium</div>
+    //     <div class="edu__d3">High school diploma in social science/media</div>
+    //     <div class="edu__e1">2005</div>
+    //     <div class="edu__e2">Duluth East High School</div>
+    //     <div class="edu__e3">One year high school studies in Minnesota as part of an exchange year.</div>
+    //     <div class="edu__bottom"></div>`;
+    // educationMain.appendChild(educationWrp);
 }
 
 // ---------------------------------------------------------------------------------------------------------
