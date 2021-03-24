@@ -12,11 +12,11 @@ document.getElementById('btn-modules').addEventListener('click', function(){
 document.getElementById('btn-work').addEventListener('click', function(){
     document.getElementById('dynamicCont').innerHTML = '';
     pageThree();
-    workContent();
 });
 document.getElementById('btn-education').addEventListener('click', function(){
     document.getElementById('dynamicCont').innerHTML = '';
     pageFour();
+    
 });
 document.getElementById('btn-portfolio').addEventListener('click', function(){
     document.getElementById('dynamicCont').innerHTML = '';
@@ -213,17 +213,20 @@ function moduleExpand (moduleContents) {
     // -----------------------------||_// ||=|| (( ___ ||==       ||   ||==|| ||_// ||==  ||== -----------------------------
     // -----------------------------||    || ||  \\_|| ||___      ||   ||  || || \\ ||___ ||___-----------------------------
     // --------------------------------------------------------------------------------------------------------------------
-let workMain;
+
 function pageThree () {
-    workMain = document.createElement('section'); //work main
+    let workMain = document.createElement('section'); //work main
     workMain.setAttribute('class', 'work'/*'main-content work'*/);
     document.getElementById('dynamicCont').appendChild(workMain);//adds work to main content
 
     const workTop = document.createElement('div'); //work heading
     workTop.classList.add('work__top');
     workTop.innerHTML = `<h1 class="heading">WORK.EXE</h1>`;
+
+    gridContent(workMain, "work");
 }
-function workContent() {
+function gridContent(gridName, pageName) {
+    console.log(gridName);
     fetch("js/contents.json")
     .then(function(response){
         return(response.json());
@@ -233,14 +236,14 @@ function workContent() {
         for (let i = 0; i <= 2; i++){
             let columnWrapper = document.createElement('div');
             columnWrapper.classList.add('table-column-wrapper');
-            workMain.appendChild(columnWrapper);
-            console.log(columnWrapper);
+            gridName.appendChild(columnWrapper);
+            // console.log(columnWrapper);
             for (obj in data) {
-                if (data[obj].label == true && data[obj].page == "work"){
-                    workMain.insertAdjacentHTML('beforeend', `<div class = ${data[obj].classes}>${data[obj].contents}</div>`);
+                if (data[obj].label == true && data[obj].page == pageName && data[obj].column == i){
+                    gridName.insertAdjacentHTML('beforeend', `<div class = ${data[obj].classes}>${data[obj].contents}</div>`);
                     console.log(obj);
                 }
-                else if (data[obj].column == i && data[obj].page == "work"){
+                else if (data[obj].column == i && data[obj].page == pageName){
                 console.log(data[obj]);
                 columnWrapper.insertAdjacentHTML('beforeend', `<div class = ${data[obj].classes}>${data[obj].contents}</div>`);
                 }
@@ -264,10 +267,11 @@ function pageFour () {
     educationTop.classList.add('edu__top');
     educationMain.appendChild(educationTop);
 
-    const educationGrid = document.createElement('article');
+    let educationGrid = document.createElement('article');
     educationGrid.classList.add('eduGrid');
     educationMain.appendChild(educationGrid);
 
+    gridContent(educationGrid, "education");
     // let educationWrp = document.createElement('div');
     // educationWrp.innerHTML = `<div class="edu__year">Graduation year</div>
     //     <div class="edu__school">School</div>

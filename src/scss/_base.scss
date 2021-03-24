@@ -441,9 +441,9 @@ a{
     border-top: 1px dashed #00ff00;
 }
 // .edu__top{grid-area: info;}
-.edu__year{grid-area: year;}
-.edu__school{grid-area: school;}
-.edu__description{grid-area: desc;}
+.edu__year{grid-area: year; color: black; background-color: #00ff00;}
+.edu__school{grid-area: school; color: black; background-color: #00ff00;}
+.edu__description{grid-area: desc; color: black; background-color: #00ff00;}
 .edu__a1{grid-area: a1;}
 .edu__a2{grid-area: a2;}
 .edu__a3{grid-area: a3;}
@@ -456,9 +456,9 @@ a{
 .edu__d1{grid-area: d1;}
 .edu__d2{grid-area: d2;}
 .edu__d3{grid-area: d3;}
-.edu__e1{grid-area: e1;}
-.edu__e2{grid-area: e2;}
-.edu__e3{grid-area: e3;}
+.edu__e1{grid-area: e1; border-bottom-width: 1px;}
+.edu__e2{grid-area: e2; border-bottom-width: 1px;}
+.edu__e3{grid-area: e3; border-bottom-width: 1px;}
 .edu__bottom{grid-area: btm;}
 
 /*------------------------------------------------------------------------------------------------------------------------------

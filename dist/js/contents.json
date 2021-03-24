@@ -4,21 +4,24 @@
         "element": "div",
         "classes": "work__year",
         "contents": "Year",
-        "label" : true
+        "label" : true,
+        "column": 0
     },
     {
         "page": "work",
         "element": "div",
         "classes": "work__employer",
         "contents": "Employer",
-        "label" : true
+        "label" : true,
+        "column": 1
     },
     {
         "page": "work",
         "element": "div",
         "classes": "work__description",
         "contents": "Description",
-        "label" : true
+        "label" : true,
+        "column": 2
     },
     {
         "page" : "work",
@@ -283,110 +286,128 @@
         "element" : "div",
         "classes" : ["edu__year"],
         "contents" : "Graduation Year",
-        "label" : true
+        "label" : true,
+        "column": 0
     },
     {
         "page" : "education",
         "element" : "div",
         "classes" : ["edu__school"],
         "contents" : "School",
-        "label" : true
+        "label" : true,
+        "column": 1
     },
     {
         "page" : "education",
         "element" : "div",
         "classes" : ["edu__description"],
         "contents" : "Program",
-        "label" : true
+        "label" : true,
+        "column": 2
     },
     {
         "page" : "education",
         "element" : "div",
-        "classes" : "edu__a1",
-        "contents" : "2022"
+        "classes" : ["edu__a1"],
+        "contents" : "2022",
+        "column": 0 
     },
     {
         "page" : "education",
         "element" : "div",
-        "classes" : "edu__a2",
-        "contents" : "Medieinstitutet"
+        "classes" : ["edu__a2"],
+        "contents" : "Medieinstitutet",
+        "column": 1 
     },
     {
         "page" : "education",
         "element" : "div",
         "classes" : "edu__a3",
-        "contents" : "Front End Developer. Vocational education (YH)"
+        "contents" : "Front End Developer. Vocational education (YH)",
+        "column": 2
     },
     {
         "page" : "education",
         "element" : "div",
         "classes" : "edu__b1",
-        "contents" : "2019"
+        "contents" : "2019",
+        "column": 0
     },
     {
         "page" : "education",
         "element" : "div",
         "classes" : "edu__b2",
-        "contents" : "Uppsala University"
+        "contents" : "Uppsala University",
+        "column": 1
     },
     {
         "page" : "education",
         "element" : "div",
         "classes" : "edu__b3",
-        "contents" : "Master's degree in Semitic languages"
+        "contents" : "Master's degree in Semitic languages",
+        "column": 2
     },
     {
         "page" : "education",
         "element" : "div",
         "classes" : "edu__c1",
-        "contents" : "2013"
+        "contents" : "2013",
+        "column": 0
     },
     {
         "page" : "education",
         "element" : "div",
         "classes" : "edu__c2",
-        "contents" : "Uppsala University"
+        "contents" : "Uppsala University",
+        "column": 1
     },
     {
         "page" : "education",
         "element" : "div",
         "classes" : "edu__c3",
-        "contents" : "Bachelor's degree in Arabic"
+        "contents" : "Bachelor's degree in Arabic",
+        "column": 2
     },
     {
         "page" : "education",
         "element" : "div",
         "classes" : "edu__d1",
-        "contents" : "2006"
+        "contents" : "2006",
+        "column": 0
     },
     {
         "page" : "education",
         "element" : "div",
         "classes" : "edu__d2",
-        "contents" : "Nacka Gymnaisum"
+        "contents" : "Nacka Gymnaisum",
+        "column": 1
     },
     {
         "page" : "education",
         "element" : "div",
         "classes" : "edu__d3",
-        "contents" : "High school diploma in social science/media"
+        "contents" : "High school diploma in social science/media",
+        "column": 2
     },
     {
         "page" : "education",
         "element" : "div",
         "classes" : "edu__e1",
-        "contents" : "2005"
+        "contents" : "2005",
+        "column": 0
     },
     {
         "page" : "education",
         "element" : "div",
         "classes" : "edu__e2",
-        "contents" : "Duluth East High School"
+        "contents" : "Duluth East High School",
+        "column": 1
     },
     {
         "page" : "education",
         "element" : "div",
         "classes" : "edu__e3",
-        "contents" : "One year high school studies in Minnesota as part of an exchange year."
+        "contents" : "One year high school studies in Minnesota as part of an exchange year.",
+        "column": 2
     }
 ]
