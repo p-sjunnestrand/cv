@@ -48,13 +48,25 @@
             --------------------------------------  || \|| || ||  \V/  ||_)) || || || \\  --------------------------------------
             -------------------------------------------------------------------------------------------------------------------->
             <nav class="nav-bar">
-                <ul class="menu">
+                <div class="menu">
+                    <div class="menuBtn">Menu</div>
+                    <div class="menuDropdown">
+                        <ul id="dropdownUl">
+                            <li id = "btnMain">Main</li>
+                            <li id = "btnModules">Modules</li>
+                            <li id = "btnWork">Work</li>
+                            <li id = "btnEducation">Education</li>
+                            <li id = "btnPortfolio">Portfolio</li>
+                        </ul>
+                    </div>
+                <!-- <ul class="menu">
                     <li class="menu-item" id="btn-main">Main.exe</li>
                     <li class="menu-item" id="btn-modules">Modules.exe</li>
                     <li class="menu-item" id="btn-work">Work.exe</li>
                     <li class="menu-item" id="btn-education">Education.exe</li>
                     <li class="menu-item" id="btn-portfolio">Portfolio.xaml</li>
-                </ul>
+                </ul> -->
+                </div>
             </nav>
             <div id="dynamicCont"></div>
         </main>

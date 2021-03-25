@@ -1,27 +1,63 @@
-document.getElementById('dynamicCont').innerHTML = '';
+let dynamicCont = document.getElementById('dynamicCont');
+
+dynamicCont.innerHTML = '';
 pageOne();
 
-document.getElementById('btn-main').addEventListener('click', function(){
-    document.getElementById('dynamicCont').innerHTML = '';
-    pageOne();
+let menuBtn = document.querySelector('.menuBtn');
+let menuDropdown = document.querySelector('.menuDropdown');
+let dropdownUl = document.getElementById('dropdownUl');
+
+window.addEventListener('click', (e)=>{
+    if (e.target.parentElement != dropdownUl && e.target != menuBtn){
+        menuDropdown.classList.remove('menuDropdownVisible');
+    }
 });
-document.getElementById('btn-modules').addEventListener('click', function(){
-    document.getElementById('dynamicCont').innerHTML = '';
-    pageTwo();
+menuBtn.addEventListener('click', ()=>{
+    menuDropdown.classList.toggle('menuDropdownVisible');  
 });
-document.getElementById('btn-work').addEventListener('click', function(){
-    document.getElementById('dynamicCont').innerHTML = '';
-    pageThree();
-});
-document.getElementById('btn-education').addEventListener('click', function(){
-    document.getElementById('dynamicCont').innerHTML = '';
-    pageFour();
+dropdownUl.addEventListener('click', e=>{
+    console.log(e.target.id);
+    switch (e.target.id) {
+        case 'btnMain' : 
+            pageOne();
+            break;
+        case 'btnModules' :
+            pageTwo();
+            break;
+        case 'btnWork' :
+            pageThree();
+            break;
+        case 'btnEducation' :
+            pageFour();
+            break;
+        case 'btnPortfolio' :
+            pageFive();
+            break;
+    }
+    menuDropdown.classList.remove('menuDropdownVisible');
+})
+
+// document.getElementById('btn-main').addEventListener('click', function(){
+//     dynamicCont.innerHTML = '';
+//     pageOne();
+// });
+// document.getElementById('btn-modules').addEventListener('click', function(){
+//     dynamicCont.innerHTML = '';
+//     pageTwo();
+// });
+// document.getElementById('btn-work').addEventListener('click', function(){
+//     dynamicCont.innerHTML = '';
+//     pageThree();
+// });
+// document.getElementById('btn-education').addEventListener('click', function(){
+//     dynamicCont.innerHTML = '';
+//     pageFour();
     
-});
-document.getElementById('btn-portfolio').addEventListener('click', function(){
-    document.getElementById('dynamicCont').innerHTML = '';
-    pageFive();
-});
+// });
+// document.getElementById('btn-portfolio').addEventListener('click', function(){
+//     dynamicCont.innerHTML = '';
+//     pageFive();
+// });
 
 // -------------------------------------------------------------------------------------------------------------------
 // -----------------------------------____   ___    ___   ____      ___   __  __ ____-----------------------------------
@@ -31,10 +67,10 @@ document.getElementById('btn-portfolio').addEventListener('click', function(){
 // --------------------------------------------------------------------------------------------------------------------
 
 function pageOne (){
+    dynamicCont.innerHTML = '';
     const personalInfo = document.createElement('section'); //personal info grid wrapper
     personalInfo.classList.add('personal-info');
-    // personalInfo.classList.add('main-content');
-    document.getElementById('dynamicCont').appendChild(personalInfo);//adds personal info to main content
+    dynamicCont.appendChild(personalInfo);//adds personal info to main content
 
     const personalInfoTop = document.createElement('div'); //top part of personal info page containing tech-talk
     personalInfoTop.classList.add('personal-info-top');
@@ -80,9 +116,10 @@ function pageOne (){
 // ---------------------------------------------------------------------------------------------------------------------
 
 function pageTwo () {
+    dynamicCont.innerHTML = '';
     const modulesMain = document.createElement('section'); //modules main
     modulesMain.setAttribute('class', 'modules'/*'main-content modules'*/);
-    document.getElementById('dynamicCont').appendChild(modulesMain);//adds modules to main content
+    dynamicCont.appendChild(modulesMain);//adds modules to main content
 
     const modulesHeading = document.createElement('div'); //adds modules header
     modulesHeading.setAttribute('class', 'modules__heading');
@@ -215,15 +252,20 @@ function moduleExpand (moduleContents) {
     // --------------------------------------------------------------------------------------------------------------------
 
 function pageThree () {
+    dynamicCont.innerHTML = '';
     let workMain = document.createElement('section'); //work main
     workMain.setAttribute('class', 'work'/*'main-content work'*/);
-    document.getElementById('dynamicCont').appendChild(workMain);//adds work to main content
+    dynamicCont.appendChild(workMain);//adds work to main content
 
     const workTop = document.createElement('div'); //work heading
     workTop.classList.add('work__top');
     workTop.innerHTML = `<h1 class="heading">WORK.EXE</h1>`;
+    workMain.appendChild(workTop);
 
-    gridContent(workMain, "work");
+    let workGrid = document.createElement('article');
+    workGrid.classList.add('workGrid');
+    workMain.appendChild(workGrid);
+    gridContent(workGrid, "work");
 }
 function gridContent(gridName, pageName) {
     console.log(gridName);
@@ -259,9 +301,10 @@ function gridContent(gridName, pageName) {
 // ---------------------------------------------------------------------------------------------------------------
 
 function pageFour () {
+    dynamicCont.innerHTML = '';
     const educationMain = document.createElement('section'); //education main
     educationMain.setAttribute('class', 'education'/*'main-content education'*/);
-    document.getElementById('dynamicCont').appendChild(educationMain);//adds education to main content
+    dynamicCont.appendChild(educationMain);//adds education to main content
 
     const educationTop = document.createElement('div');
     educationTop.classList.add('edu__top');
@@ -305,9 +348,10 @@ function pageFour () {
 // ----------------------------------------------------------------------------------------------------------
 
 function pageFive () {
+    dynamicCont.innerHTML = '';
     const portfolioMain = document.createElement('section'); //portfolio main
     portfolioMain.setAttribute('class', 'portfolio'/*'main-content portfolio'*/);
-    document.getElementById('dynamicCont').appendChild(portfolioMain);//adds portfolio to main content
+    dynamicCont.appendChild(portfolioMain);//adds portfolio to main content
 
     let portfolioTop = document.createElement('div');
     portfolioTop.classList.add('portfolio__top');

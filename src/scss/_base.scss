@@ -76,12 +76,50 @@ a{
     width: 100%;
     height: fit-content;
 }
-.menu{
-    display: flex;
-    justify-content: space-evenly;
-    margin: 0;
-    flex-wrap: wrap;
+.menuBtn{
+    background-color: black;
+    display: inline-block;
+    border: 1px solid #00ff00;
+    margin: 1px 1px 1px 5px;
+    padding: 1px;
+    font-size: 0.8rem;
+    cursor: pointer;
 }
+.menuDropdown{
+    position: absolute;
+    background-color: black;
+    border: 3px solid #00ff00;
+    width: 15%;
+    display: none;
+    ul{
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        padding: 1px;
+        justify-content: space-evenly;
+        height: 100%;
+        margin: 0;
+        width: 100%;
+        li{
+            margin: 1px;
+            border-bottom: 1px solid #00ff00;
+            padding-top: 6%;
+            cursor: pointer;
+            &:last-child{
+                border: none;
+            }
+        }
+    }
+}
+.menuDropdownVisible{
+    display: block;
+}
+// .menu{
+//     display: flex;
+//     justify-content: space-evenly;
+//     margin: 0;
+//     flex-wrap: wrap;
+// }
 .menu-item{
     font-size: 12px;
     list-style-type: none;
@@ -308,16 +346,22 @@ a{
 -----------------------------||_// ||=|| (( ___ ||==       ||   ||==|| ||_// ||==  ||== -----------------------------
 -----------------------------||    || ||  \\_|| ||___      ||   ||  || || \\ ||___ ||___-----------------------------
 --------------------------------------------------------------------------------------------------------------------*/
-
-.work{
+.workMain{
+    display: flex;
+    flex-wrap: wrap;
+}
+.work__top{
+    width: 100%;
+    text-align: center;
+}
+.workGrid{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(15, auto);
+    grid-template-rows: repeat(14, auto);
     width: 100%;
     height: auto;
     /*min-height: 100vh;*/
     grid-template-areas:
-        "info info info info info"
         "year plc desc desc desc"
         "a1 a2 a3 a3 a3"
         "b1 b2 b3 b3 b3"
@@ -350,7 +394,6 @@ a{
     }
 }
 
-.work__top{grid-area: info;}
 .gridYear{grid-area: year; background-color: #00ff00;
     color: black;}
 .gridPlace{grid-area: plc; background-color: #00ff00;
