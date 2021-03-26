@@ -409,5 +409,19 @@
         "classes" : "e3",
         "contents" : "One year high school studies in Minnesota as part of an exchange year.",
         "column": 2
+    },
+    {
+        "page" : "portfolio",
+        "classes" : "portfolioItem",
+        "img" : "img/linkedinLogo.png",
+        "contents" : "LinkedIn",
+        "link" : "https://se.linkedin.com/in/petter-sjunnestrand-663a8a94"
+    },
+    {
+        "page" : "portfolio",
+        "classes" : "portfolioItem",
+        "img" : "img/githubLogo.png",
+        "contents" : "GitHub",
+        "link" : "https://github.com/p-sjunnestrand"
     }
 ]

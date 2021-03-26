@@ -123,7 +123,7 @@ function pageTwo () {
 
     const modulesHeading = document.createElement('div'); //adds modules header
     modulesHeading.setAttribute('class', 'modules__heading');
-    modulesHeading.innerHTML = `<h1>MODULES.EXE</h1>`;
+    modulesHeading.innerHTML = `<h1>~/users/admin/modules</h1>`;
     modulesMain.appendChild(modulesHeading);
 
     let langTech = document.createElement('div'); //adds module items
@@ -259,7 +259,7 @@ function pageThree () {
 
     const workTop = document.createElement('div'); //work heading
     workTop.classList.add('work__top');
-    workTop.innerHTML = `<h1 class="heading">WORK.EXE</h1>`;
+    workTop.innerHTML = `<h1 class="heading">~/users/admin/work</h1>`;
     workMain.appendChild(workTop);
 
     let workGrid = document.createElement('article');
@@ -308,7 +308,7 @@ function pageFour () {
 
     const educationTop = document.createElement('div');
     educationTop.classList.add('edu__top');
-    educationTop.innerHTML = `<h1>EDUCATION.EXE</h1>`;
+    educationTop.innerHTML = `<h1>~/users/admin/education</h1>`;
     educationMain.appendChild(educationTop);
 
     let educationGrid = document.createElement('article');
@@ -349,37 +349,63 @@ function pageFour () {
 
 function pageFive () {
     dynamicCont.innerHTML = '';
+
     const portfolioMain = document.createElement('section'); //portfolio main
     portfolioMain.setAttribute('class', 'portfolio'/*'main-content portfolio'*/);
     dynamicCont.appendChild(portfolioMain);//adds portfolio to main content
 
     let portfolioTop = document.createElement('div');
     portfolioTop.classList.add('portfolio__top');
-    portfolioTop.innerHTML = `<h1 class="heading">PORTFOLIO.XAML</h1>`;
-    portfolioMain.appendChild(portfolioTop);
+    portfolioTop.innerHTML = `<h1 class="heading">~/users/admin/portfolio</h1>`;
+    dynamicCont.appendChild(portfolioTop);
 
     let portfolioCont = document.createElement('div');
     portfolioCont.classList.add('portfolio-container');
-    portfolioMain.appendChild(portfolioCont);
+    dynamicCont.appendChild(portfolioCont);
 
-    portfolioCont.innerHTML = `<a href="https://www.ne7kisweidi.se">
-        <div class="portfolio-item">
-            <img src="img/ne7ki-sweidi.png" alt="The phrase 'Let's talk Swedish written' in Arabic." class="portfolio-item__picture">
-            <div class="portfolio-item__text-wrapper">
-                <p class="portfolio-item__text">Podcast for learning Swedish, in Arabic.</p>
-            </div>
-        </div>
-    </a>
-    <div class="portfolio-item portfolio-item">
-        <div class="portfolio-item__text-wrapper portfolio-item__text-wrapper--empty">
-            <p class="portfolio-item__text">Error 42<br>Directory empty.</p>
-        </div>
-    </div>
-    <div class="portfolio-item portfolio-item">
-        <div class="portfolio-item__text-wrapper portfolio-item__text-wrapper--empty">
-            <p class="portfolio-item__text">Error 42<br>Directory empty.</p>
-        </div>
-    </div>`;
+    fetch("js/contents.json")
+    .then(function(response){
+        return(response.json())
+    })
+    .then(function(data){
+        for (obj in data){
+            if (data[obj].page == "portfolio"){
+                console.log(data[obj].contents);
+                const portfolioItem = document.createElement('div');
+                portfolioItem.classList.add(data[obj].classes);
+                const portfolioItemLink = document.createElement('a');
+                portfolioItemLink.href = data[obj].link;
+                portfolioItem.appendChild(portfolioItemLink);
+                const portfolioPic = document.createElement('img');
+                portfolioPic.src = data[obj].img;
+                portfolioPic.classList.add('portfolioPic');
+                portfolioItemLink.appendChild(portfolioPic);
+                const portfolioText = document.createElement('div');
+                portfolioText.innerHTML = data[obj].contents;
+                portfolioText.classList.add('portfolioText');
+                portfolioItemLink.appendChild(portfolioText);
+                portfolioCont.appendChild(portfolioItem);
+            }
+        }
+    })
+    // portfolioCont.innerHTML = `<a href="https://www.ne7kisweidi.se">
+    //     <div class="portfolio-item">
+    //         <img src="img/ne7ki-sweidi.png" alt="The phrase 'Let's talk Swedish written' in Arabic." class="portfolio-item__picture">
+    //         <div class="portfolio-item__text-wrapper">
+    //             <p class="portfolio-item__text">Podcast for learning Swedish, in Arabic.</p>
+    //         </div>
+    //     </div>
+    // </a>
+    // <div class="portfolio-item portfolio-item">
+    //     <div class="portfolio-item__text-wrapper portfolio-item__text-wrapper--empty">
+    //         <p class="portfolio-item__text">Error 42<br>Directory empty.</p>
+    //     </div>
+    // </div>
+    // <div class="portfolio-item portfolio-item">
+    //     <div class="portfolio-item__text-wrapper portfolio-item__text-wrapper--empty">
+    //         <p class="portfolio-item__text">Error 42<br>Directory empty.</p>
+    //     </div>
+    // </div>`;
 }
 
 // Studentcap icon: <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>

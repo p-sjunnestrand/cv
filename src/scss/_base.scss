@@ -508,6 +508,19 @@ a{
     flex-wrap: wrap;
     align-items: center;
 }
+.portfolioItem{
+    width: auto;
+    cursor: pointer;
+}
+.portfolioPic{
+    width: 120px;
+    margin: 2px;
+}
+.portfolioText{
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 5px;
+}
 .portfolio-item{
     display: flex;
     flex-direction: column;
@@ -532,6 +545,7 @@ a{
     color: black;
     border-radius: 0 0 10px 10px;
     flex-grow: 2;
+    width: 100%;
 }
 .portfolio-item__text{
     text-align: center;
