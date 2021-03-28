@@ -374,6 +374,7 @@ function pageFive () {
                 const portfolioItem = document.createElement('div');
                 portfolioItem.classList.add(data[obj].classes);
                 const portfolioItemLink = document.createElement('a');
+                portfolioItemLink.classList.add('portfolioLink');
                 portfolioItemLink.href = data[obj].link;
                 portfolioItem.appendChild(portfolioItemLink);
                 const portfolioPic = document.createElement('img');

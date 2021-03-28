@@ -423,5 +423,19 @@
         "img" : "img/githubLogo.png",
         "contents" : "GitHub",
         "link" : "https://github.com/p-sjunnestrand"
+    },
+    {
+        "page" : "portfolio",
+        "classes" : "portfolioItem",
+        "img" : "img/scissorLogo.png",
+        "contents" : "Klunskampen",
+        "link": "https://p-sjunnestrand.github.io/sten-sax-pase/"
+    },
+    {
+        "page" : "portfolio",
+        "classes" : "portfolioItem",
+        "img" : "img/yarnLogo.png",
+        "contents" : "Trials of the Norns",
+        "link": "https://p-sjunnestrand.github.io/trials-of-norns/"
     }
 ]
