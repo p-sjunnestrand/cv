@@ -94,13 +94,13 @@ function pageOne (){
     let personalInfoHeading = document.createElement('div'); //adds ASCII name and corresponding info
     personalInfoHeading.classList.add('personal-info-heading');
     personalInfoHeading.innerHTML = `<p>Seventh Beach Industries<br>Autonomous Pseudo-Voltonic Lewitt-Hoffenfeld Manifold, AKA the</p>
-    <img src="img/ascii-name.png" alt="The name 'Petter Sjunnestrand' written in ASCII characters." class="personal-info__name-ascii"/>
+    <img src="dist/img/ascii-name.png" alt="The name 'Petter Sjunnestrand' written in ASCII characters." class="personal-info__name-ascii"/>
     <p class="model-name">Model 86-q4</p>`;
     personalInfo.appendChild(personalInfoHeading);
 
     let personalInfoImg = document.createElement('div'); //adds ASCII picture
     personalInfoImg.classList.add('personal-info-img');
-    personalInfoImg.innerHTML = `<img src="img/profile-picture.png" alt="A profile picture of Petter in ASCII art style." class="personal-info__profile-picture"/>`;
+    personalInfoImg.innerHTML = `<img src="dist/img/profile-picture.png" alt="A profile picture of Petter in ASCII art style." class="personal-info__profile-picture"/>`;
     personalInfo.appendChild(personalInfoImg);
 
     let personalInfoWarning = document.createElement('div'); //adds warning to bottom
@@ -187,7 +187,7 @@ function pageTwo () {
     //     document.querySelector('.window').classList.remove('expand');
     // });
     // `;
-    webProc.innerHTML = `<img src='img/logo-websites-31321.png' alt = 'picture of stylized earth' class = 'itemPic'><div class = 'itemText'>WebProc-0.2</div>`;//`<h1 class="modules__names heading">WebProc-0.2</h1>
+    webProc.innerHTML = `<img src='dist/img/logo-websites-31321.png' alt = 'picture of stylized earth' class = 'itemPic'><div class = 'itemText'>WebProc-0.2</div>`;//`<h1 class="modules__names heading">WebProc-0.2</h1>
     let webProcContents =  `<h2>WebProc-0.2 (Beta)</h2>
     <p> The WebProc-0.2 (Beta) module enables skillful processing of web design tools including HTML, CSS & JavaScript.
     Note that the module is only in its Beta development stage and all features
@@ -211,7 +211,7 @@ function pageTwo () {
         moduleExpand(webProcContents);
     });
     
-    eduMod.innerHTML = `<img src='img/students-cap.png' alt = 'picture of stylized student cap' class = 'itemPic'><div class = 'itemText'>EduMod Alpha</div>`;//`<h1 class="modules__names heading">EduMod Alpha</h1>
+    eduMod.innerHTML = `<img src='dist/img/students-cap.png' alt = 'picture of stylized student cap' class = 'itemPic'><div class = 'itemText'>EduMod Alpha</div>`;//`<h1 class="modules__names heading">EduMod Alpha</h1>
     let eduModContents = `<h2>EduMod Alpha</h2>
         <p>Grants enhanced pedagogical abilities.</p>`;
     eduMod.addEventListener('click', ()=>{
@@ -269,7 +269,7 @@ function pageThree () {
 }
 function gridContent(gridName, pageName) {
     console.log(gridName);
-    fetch("js/contents.json")
+    fetch("dist/js/contents.json")
     .then(function(response){
         return(response.json());
     })
@@ -363,7 +363,7 @@ function pageFive () {
     portfolioCont.classList.add('portfolio-container');
     dynamicCont.appendChild(portfolioCont);
 
-    fetch("js/contents.json")
+    fetch("dist/js/contents.json")
     .then(function(response){
         return(response.json())
     })

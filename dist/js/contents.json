@@ -413,28 +413,28 @@
     {
         "page" : "portfolio",
         "classes" : "portfolioItem",
-        "img" : "img/linkedinLogo.png",
+        "img" : "dist/img/linkedinLogo.png",
         "contents" : "LinkedIn",
         "link" : "https://se.linkedin.com/in/petter-sjunnestrand-663a8a94"
     },
     {
         "page" : "portfolio",
         "classes" : "portfolioItem",
-        "img" : "img/githubLogo.png",
+        "img" : "dist/img/githubLogo.png",
         "contents" : "GitHub",
         "link" : "https://github.com/p-sjunnestrand"
     },
     {
         "page" : "portfolio",
         "classes" : "portfolioItem",
-        "img" : "img/scissorLogo.png",
+        "img" : "dist/img/scissorLogo.png",
         "contents" : "Klunskampen",
         "link": "https://p-sjunnestrand.github.io/sten-sax-pase/"
     },
     {
         "page" : "portfolio",
         "classes" : "portfolioItem",
-        "img" : "img/yarnLogo.png",
+        "img" : "dist/img/yarnLogo.png",
         "contents" : "Trials of the Norns",
         "link": "https://p-sjunnestrand.github.io/trials-of-norns/"
     }
